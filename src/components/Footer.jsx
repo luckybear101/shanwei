@@ -1,6 +1,8 @@
 import wechat from '../images/wechat.jpg'
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
@@ -15,7 +17,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            &copy; 2023 善为（北京）健康管理有限公司, 版权所有.
+            &copy; {currentYear} 善为（北京）健康管理有限公司, 版权所有.
           </p>
         </div>
       </div>
